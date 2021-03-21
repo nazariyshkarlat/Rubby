@@ -1,0 +1,59 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textInputLayoutItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="14dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="14dp">
+
+    <EditText
+        android:id="@+id/textInputLayoutItemEditText"
+        style="@style/Regular16Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingBottom="20dp"
+        android:textColorHint="?default_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textInputLayoutItemSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/Regular12Secondary"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutItemEditText" />
+
+    <ImageView
+        android:id="@+id/textInputLayoutItemErrorIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutItemSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutItemSubtitle"
+        app:srcCompat="@drawable/ic_error_16dp" />
+
+    <ImageView
+        android:id="@+id/textInputLayoutItemIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutItemEditText"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutItemEditText"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutItemEditText"
+        app:srcCompat="@drawable/visibility_selector" />
+
+</android.support.constraint.ConstraintLayout>

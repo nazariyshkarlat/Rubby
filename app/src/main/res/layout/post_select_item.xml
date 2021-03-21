@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/postSelectItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/postSelectItemAwa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/awa_oval" />
+
+    <TextView
+        android:id="@+id/postSelectItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/Regular16Primary"
+        app:layout_constraintStart_toEndOf="@+id/postSelectItemAwa"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemAwa" />
+
+    <TextView
+        android:id="@+id/postSelectItemSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="@style/Regular14Primary"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/postSelectItemRadioButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/postSelectItemName"
+        app:layout_constraintTop_toBottomOf="@+id/postSelectItemName" />
+
+    <TextView
+        android:id="@+id/postSelectItemDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="•"
+        android:textAppearance="@style/Regular12Secondary"
+        app:layout_constraintBottom_toBottomOf="@+id/postSelectItemName"
+        app:layout_constraintStart_toEndOf="@+id/postSelectItemName"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemName" />
+
+    <TextView
+        android:id="@+id/postSelectItemTimeLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textAppearance="@style/Regular12Secondary"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/postSelectItemDot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/postSelectItemDot" />
+
+    <ImageView
+        android:id="@+id/postSelectItemPostImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/post_image"
+        app:layout_constraintTop_toBottomOf="@+id/postSelectItemSubtitle"/>
+
+    <ImageView
+        android:id="@+id/postSelectItemLikeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postSelectItemPostImage"
+        app:srcCompat="@drawable/ic_outline_favorite_border_87_24dp" />
+
+    <TextView
+        android:id="@+id/postSelectItemLikeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/Regular14Primary"
+        app:layout_constraintBottom_toBottomOf="@+id/postSelectItemLikeIcon"
+        app:layout_constraintStart_toEndOf="@+id/postSelectItemLikeIcon"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemLikeIcon" />
+
+    <TextView
+        android:id="@+id/postSelectItemCommentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/Regular14Primary"
+        app:layout_constraintBottom_toBottomOf="@+id/postSelectItemCommentIcon"
+        app:layout_constraintStart_toEndOf="@+id/postSelectItemCommentIcon"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemCommentIcon" />
+
+    <ImageView
+        android:id="@+id/postSelectItemCommentIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/postSelectItemLikeTextView"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemLikeIcon"
+        app:srcCompat="@drawable/ic_outline_mode_comment_87_24dp" />
+
+    <ImageView
+        android:id="@+id/postSelectItemStarIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemCommentIcon"
+        app:srcCompat="@drawable/ic_outline_star_border_87_24dp" />
+
+    <ImageView
+        android:id="@+id/postSelectItemReplyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/postSelectItemStarIcon"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemLikeIcon"
+        app:srcCompat="@drawable/ic_outline_reply_24dp" />
+
+    <RadioButton
+        android:id="@+id/postSelectItemRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/postSelectItemAwa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/postSelectItemAwa" />
+</android.support.constraint.ConstraintLayout>

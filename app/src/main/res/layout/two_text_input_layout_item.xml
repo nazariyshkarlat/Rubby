@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/twoTextInputLayoutItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="16dp">
+
+    <com.example.rubby.OverridedWidgets.TextInputLayoutCustom
+        android:id="@+id/twoTextInputLayoutItemFirstInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColorHint="?default_60"
+        app:boxStrokeColor="@color/text_input_layout_color"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/twoTextInputLayoutItemFirstEditText"
+            style="@style/Regular16Primary"
+            android:nextFocusDown="@+id/twoTextInputLayoutItemSecondEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textAlignment="viewStart"
+            android:textColorHint="?default_60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </com.example.rubby.OverridedWidgets.TextInputLayoutCustom>
+
+    <com.example.rubby.OverridedWidgets.TextInputLayoutCustom
+        android:id="@+id/twoTextInputLayoutItemSecondInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColorHint="?default_60"
+        app:boxStrokeColor="@color/text_input_layout_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/twoTextInputLayoutItemSecondEditText"
+            style="@style/Regular16Primary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textAlignment="viewStart"
+            android:textColorHint="?default_60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </com.example.rubby.OverridedWidgets.TextInputLayoutCustom>
+
+    <TextView
+        android:id="@+id/twoTextInputLayoutItemSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/Regular12Secondary"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoTextInputLayoutItemFirstInputLayout" />
+
+    <ImageView
+        android:id="@+id/twoTextInputLayoutItemErrorIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/twoTextInputLayoutItemSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/twoTextInputLayoutItemSubtitle"
+        app:srcCompat="@drawable/ic_error_16dp" />
+
+    <ImageView
+        android:id="@+id/twoTextInputLayoutItemIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/twoTextInputLayoutItemFirstInputLayout"
+        app:layout_constraintEnd_toEndOf="@+id/twoTextInputLayoutItemFirstInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/twoTextInputLayoutItemFirstInputLayout"
+        app:srcCompat="@drawable/visibility_selector" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>

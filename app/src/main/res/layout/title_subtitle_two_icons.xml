@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titleSubtitleTwoIconsItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:background="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/titleSubtitleTwoIconsItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:textAppearance="@style/Regular16Primary"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/titleSubtitleTwoIconsItemSubtitle"
+        app:layout_constraintEnd_toStartOf="@+id/titleSubtitleTwoIconsItemFirstIcon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/titleSubtitleTwoIconsItemSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:textAppearance="@style/Regular14Secondary"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/titleSubtitleTwoIconsItemFirstIcon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleSubtitleTwoIconsItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/titleSubtitleTwoIconsItemTitle" />
+
+    <ImageView
+        android:id="@+id/titleSubtitleTwoIconsItemFirstIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleSubtitleTwoIconsItemSecondIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/titleSubtitleTwoIconsItemFirstIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

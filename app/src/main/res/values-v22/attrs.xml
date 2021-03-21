@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <attr name="page_background_color" format="reference"/>
+    <attr name="text_primary_color" format="reference"/>
+    <attr name="text_secondary_color" format="reference"/>
+    <attr name="dialog_color" format="reference"/>
+    <attr name="active_pressed" format="reference"/>
+    <attr name="divider_color" format="reference"/>
+    <attr name="active_color" format="reference"/>
+    <attr name="active_color_20" format="reference"/>
+    <attr name="active_color_40" format="reference"/>
+    <attr name="thumb_switch_color" format="reference"/>
+    <attr name="track_switch_color" format="reference"/>
+    <attr name="default_12" format="reference"/>
+    <attr name="default_60" format="reference"/>
+    <attr name="default_87" format="reference"/>
+    <attr name="snackbar_color" format="reference"/>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/bottomBarFirstIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:paddingStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottomBarFirstGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_menu_87_24dp" />
+
+    <TextView
+        android:id="@+id/bottomBarFirstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="12dp"
+        android:text="More"
+        android:textAppearance="@style/Regular12Accent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarFirstIcon"
+        app:layout_constraintStart_toEndOf="@+id/bottomBarFirstIcon"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarFirstIcon" />
+
+    <ImageView
+        android:id="@+id/bottomBarFirstBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarFirstIcon"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBarFirstTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bottomBarFirstIcon"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarFirstIcon"
+        app:srcCompat="@drawable/max_rounded_blue_12_rectangle" />
+
+    <ImageView
+        android:id="@+id/bottomBarSecondIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:paddingStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottomBarSecondGuideline"
+        app:layout_constraintStart_toEndOf="@+id/bottomBarFirstBarrier"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_home_87_24dp" />
+
+    <TextView
+        android:id="@+id/bottomBarSecondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="12dp"
+        android:text="Home"
+        android:textAppearance="@style/Regular12Accent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarSecondIcon"
+        app:layout_constraintEnd_toStartOf="@+id/bottomBarSecondGuideline"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarSecondIcon" />
+
+    <ImageView
+        android:id="@+id/bottomBarSecondBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarSecondIcon"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBarSecondTextView"
+        app:layout_constraintStart_toStartOf="@+id/bottomBarSecondTextView"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarSecondIcon"
+        app:srcCompat="@drawable/max_rounded_blue_12_rectangle" />
+
+    <ImageView
+        android:id="@+id/bottomBarThirdIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:paddingStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottomBarSecondBarrier"
+        app:layout_constraintStart_toStartOf="@+id/bottomBarSecondGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_search_87_24dp" />
+
+    <TextView
+        android:id="@+id/bottomBarThirdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="12dp"
+        android:text="Search"
+        android:textAppearance="@style/Regular12Accent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarThirdIcon"
+        app:layout_constraintEnd_toStartOf="@+id/bottomBarThirdGuideline"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarThirdIcon" />
+
+    <ImageView
+        android:id="@+id/bottomBarThirdBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarThirdIcon"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBarThirdTextView"
+        app:layout_constraintStart_toStartOf="@+id/bottomBarThirdTextView"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarThirdIcon"
+        app:srcCompat="@drawable/max_rounded_blue_12_rectangle" />
+
+    <ImageView
+        android:id="@+id/bottomBarFourthIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginEnd="12dp"
+        android:paddingStart="12dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bottomBarThirdGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/ic_outline_more_vert_87_24dp" />
+
+    <TextView
+        android:id="@+id/bottomBarFourthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="12dp"
+        android:text="Settings"
+        android:textAppearance="@style/Regular12Accent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarFourthIcon"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarFourthIcon"
+        tools:layout_editor_absoluteX="355dp" />
+
+    <ImageView
+        android:id="@+id/bottomBarFourthBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBarFourthIcon"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBarFourthTextView"
+        app:layout_constraintStart_toStartOf="@+id/bottomBarFourthTextView"
+        app:layout_constraintTop_toTopOf="@+id/bottomBarFourthIcon"
+        app:srcCompat="@drawable/max_rounded_blue_12_rectangle" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottomBarFirstGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottomBarSecondGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottomBarThirdGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/bottomBarFirstBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="bottomBarFirstGuideline,bottomBarFirstTextView"
+        tools:layout_editor_absoluteX="411dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/bottomBarSecondBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="bottomBarThirdGuideline,bottomBarFourthIcon"
+        tools:layout_editor_absoluteX="411dp" />
+
+</android.support.constraint.ConstraintLayout>

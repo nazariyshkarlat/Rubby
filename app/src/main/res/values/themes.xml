@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="DefaultRootTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:popupBackground">@color/null_color</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="LightTheme" parent="DefaultRootTheme">
+        <item name="colorControlNormal">@color/dark_60</item>
+        <item name="colorPrimary">@color/gray_75</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorControlHighlight">@color/dark_12</item>
+        <item name="android:textColorPrimary">@color/dark_87</item>
+        <item name="android:textColorSecondary">@color/dark_60</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="page_background_color">@color/white</item>
+        <item name="dialog_color">@color/white</item>
+        <item name="divider_color">@color/dark_12</item>
+        <item name="default_87">@color/dark_87</item>
+        <item name="thumb_switch_color">@color/gray_db</item>
+        <item name="track_switch_color">@color/gray_bd</item>
+        <item name="default_60">@color/dark_60</item>
+        <item name="default_12">@color/dark_12</item>
+        <item name="snackbar_color">@color/snackbar_color</item>
+        <item name="text_primary_color">@color/dark_87</item>
+        <item name="text_secondary_color">@color/dark_60</item>
+    </style>
+
+    <style name="NightTheme" parent="DefaultRootTheme">
+        <item name="colorControlNormal">@color/white_60</item>
+        <item name="colorPrimary">@color/gray_75</item>
+        <item name="colorControlHighlight">@color/white_12</item>
+        <item name="colorPrimaryDark">@color/gray_25</item>
+        <item name="android:textColorPrimary">@color/white_87</item>
+        <item name="android:textColorSecondary">@color/white_60</item>
+        <item name="thumb_switch_color">@color/gray_8e</item>
+        <item name="track_switch_color">@color/gray_8e</item>
+        <item name="android:navigationBarColor">@color/gray_25</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:statusBarColor">@color/gray_25</item>
+        <item name="android:windowBackground">@color/gray_25</item>
+        <item name="page_background_color">@color/gray_25</item>
+        <item name="dialog_color">@color/gray_25</item>
+        <item name="divider_color">@color/white_12</item>
+        <item name="default_87">@color/white_87</item>
+        <item name="default_60">@color/white_60</item>
+        <item name="default_12">@color/white_12</item>
+        <item name="snackbar_color">@color/gray_25</item>
+        <item name="text_primary_color">@color/white_87</item>
+        <item name="text_secondary_color">@color/white_60</item>
+    </style>
+
+    <style name="DarkTheme" parent="DefaultRootTheme">
+        <item name="colorControlNormal">@color/white_60</item>
+        <item name="colorPrimary">@color/gray_75</item>
+        <item name="colorControlHighlight">@color/white_12</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:textColorPrimary">@color/white_87</item>
+        <item name="android:textColorSecondary">@color/white_60</item>
+        <item name="thumb_switch_color">@color/gray_8e</item>
+        <item name="track_switch_color">@color/gray_8e</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="page_background_color">@color/black</item>
+        <item name="dialog_color">@color/snackbar_color</item>
+        <item name="divider_color">@color/white_12</item>
+        <item name="default_87">@color/white_87</item>
+        <item name="default_60">@color/white_60</item>
+        <item name="default_12">@color/white_12</item>
+        <item name="snackbar_color">@color/snackbar_color</item>
+        <item name="text_primary_color">@color/white_87</item>
+        <item name="text_secondary_color">@color/white_60</item>
+    </style>
+
+    <style name="LightBlueTheme" parent="LightTheme">
+        <item name="colorAccent">@color/blue</item>
+        <item name="active_color">@color/blue</item>
+        <item name="active_color_20">@color/blue_20</item>
+        <item name="active_color_40">@color/blue_40</item>
+        <item name="active_pressed">@color/blue_pressed</item>
+    </style>
+
+    <style name="LightGreenTheme" parent="LightTheme">
+        <item name="colorAccent">@color/green</item>
+        <item name="active_color">@color/green</item>
+        <item name="android:background">@color/null_color</item>
+        <item name="active_color_20">@color/green_20</item>
+        <item name="active_color_40">@color/green_40</item>
+        <item name="active_pressed">@color/green_pressed</item>
+    </style>
+
+    <style name="NightBlueTheme" parent="NightTheme">
+        <item name="colorAccent">@color/blue</item>
+        <item name="active_color">@color/blue</item>
+        <item name="active_color_20">@color/blue_20</item>
+        <item name="active_color_40">@color/blue_40</item>
+        <item name="active_pressed">@color/blue_pressed</item>
+    </style>
+
+    <style name="NightGreenTheme" parent="NightTheme">
+        <item name="colorAccent">@color/green</item>
+        <item name="active_color">@color/green</item>
+        <item name="active_color_20">@color/green_20</item>
+        <item name="active_color_40">@color/green_40</item>
+        <item name="active_pressed">@color/green_pressed</item>
+    </style>
+
+    <style name="DarkBlueTheme" parent="DarkTheme">
+        <item name="colorAccent">@color/blue</item>
+        <item name="active_color">@color/blue</item>
+        <item name="active_color_20">@color/blue_20</item>
+        <item name="active_color_40">@color/blue_40</item>
+        <item name="active_pressed">@color/blue_pressed</item>
+    </style>
+
+    <style name="DarkGreenTheme" parent="DarkTheme">
+        <item name="colorAccent">@color/green</item>
+        <item name="active_color">@color/green</item>
+        <item name="active_color_20">@color/green_20</item>
+        <item name="active_color_40">@color/green_40</item>
+        <item name="active_pressed">@color/green_pressed</item>
+
+    </style>
+
+</resources>
